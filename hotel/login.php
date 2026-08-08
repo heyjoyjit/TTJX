@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
 
                 <p class="mt-8 text-center text-sm text-slate-500 font-medium">
-                    Don't have an account? <a href="<?= BASE_URL ?>hotels/register.php" class="text-blue-600 hover:text-blue-800 transition-colors border-b border-transparent hover:border-blue-600 pb-0.5">Register your hotel</a>
+                    Don't have an account? <a href="<?= BASE_URL ?>hotel/register.php" class="text-blue-600 hover:text-blue-800 transition-colors border-b border-transparent hover:border-blue-600 pb-0.5">Register your hotel</a>
                 </p>
             </div>
         </div>

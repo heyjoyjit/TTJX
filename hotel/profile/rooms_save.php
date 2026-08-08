@@ -54,7 +54,7 @@ try {
         }
     }
 
-    $galleryDir = BASE_PATH . 'uploads/hotels/gallery/';
+    $galleryDir = BASE_PATH . 'uploads/hotel/gallery/';
     if (!is_dir($galleryDir)) mkdir($galleryDir, 0777, true);
 
     // Save Fixed Gallery Categories

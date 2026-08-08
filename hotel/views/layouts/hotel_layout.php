@@ -89,6 +89,14 @@ $userInitial  = !empty($partnerEmail) ? strtoupper(substr($partnerEmail, 0, 1)) 
                 <i class="fas fa-address-card w-5 text-center <?= strpos($_SERVER['REQUEST_URI'], 'profile') !== false ? 'text-white' : 'text-slate-400 group-hover:text-blue-400' ?>"></i>
                 <span class="font-medium text-sm">Hotel Profile & Setup</span>
             </a>
+
+            <br/>
+
+            <p class="px-3 text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 mt-6">Invoices & Settlements</p>
+            <a href="<?= BASE_URL ?>hotel/invoices/index.php" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-slate-800 hover:text-white transition-colors group <?= strpos($_SERVER['REQUEST_URI'], 'invoices') !== false ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20' : '' ?>">
+                <i class="fas fa-file-invoice-dollar w-5 text-center <?= strpos($_SERVER['REQUEST_URI'], 'invoices') !== false ? 'text-white' : 'text-slate-400 group-hover:text-blue-400' ?>"></i>
+                <span class="font-medium text-sm">Settlement Invoices</span>
+            </a>
         </nav>
 
         <div class="p-4 border-t border-slate-800 bg-slate-900">

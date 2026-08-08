@@ -140,7 +140,7 @@ requireAdmin();
 
                 <p class="px-3 text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 mt-6">Partners & Finance</p>
 
-                <a href="<?= BASE_URL ?>admin/hotels/index.php" class="nav-item flex items-center px-3 py-2.5 rounded-lg hover:bg-slate-800 transition-all group text-white">
+                <a href="<?= BASE_URL ?>admin/hotel/index.php" class="nav-item flex items-center px-3 py-2.5 rounded-lg hover:bg-slate-800 transition-all group text-white">
                     <i class="fas fa-hotel w-6 text-center text-slate-400 group-hover:text-blue-400 transition-colors"></i>
                     <span class="ml-2 font-medium">Hotels</span>
                 </a>

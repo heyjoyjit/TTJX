@@ -105,13 +105,13 @@ function sendCustomEmail($toEmail, $subject, $htmlBody, $toName = null, $attachm
 
 function configureMailer(PHPMailer $mail) {
     $mail->isSMTP();
-    $mail->Host       = 'smtp.hostinger.com'; // Replace with your actual SMTP host
+    $mail->Host       = 'smtp.gmail.com'; // Replace with your actual SMTP host
     $mail->SMTPAuth   = true;
     $mail->Username   = 'smarak.haldar.official@gmail.com';
     $mail->Password   = 'cthv vfwy jblr fsba'; // Use environment variables in production
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Or ENCRYPTION_SMTPS for port 465
-    $mail->Port       = 587; 
-    
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Or ENCRYPTION_SMTPS for port 465
+    $mail->Port       = 465; // Use 465 for SSL or 587 for TLS
+
     $mail->setFrom('smarak.haldar.official@gmail.com', 'Traveltara');
     $mail->addReplyTo('smarak.haldar.official@gmail.com', 'Traveltara Support');
 }

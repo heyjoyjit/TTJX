@@ -70,14 +70,12 @@ function razorpay_verify_payment_signature($order_id, $payment_id, $signature)
     return hash_equals($expected_signature, $signature);
 }
 
-<?php
-// includes/razorpay_helper.php
 // Add this function if it does not already exist
 
 function createRazorpayPaymentLink($amount, $customer_email, $customer_phone, $customer_name, $description, $reference_id) {
     // Replace with your actual Razorpay API Keys (Store these in config.php ideally)
-    $key_id = "YOUR_RAZORPAY_KEY_ID";
-    $key_secret = "YOUR_RAZORPAY_KEY_SECRET";
+    $key_id = RAZORPAY_KEY_ID;
+    $key_secret = RAZORPAY_KEY_SECRET;
 
     $url = "https://api.razorpay.com/v1/payment_links";
 

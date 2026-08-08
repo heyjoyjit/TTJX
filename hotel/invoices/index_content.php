@@ -67,7 +67,7 @@ $invoices = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                     <!-- Reuses the admin PDF generator, just ensure auth checks allow hotel sessions to view their own IDs -->
-                                    <a href="../../admin/invoices/download_pdf.php?id=<?php echo $inv['id']; ?>" class="text-indigo-600 hover:text-indigo-900 bg-indigo-50 px-4 py-2 rounded-lg font-bold" target="_blank">
+                                    <a href="<?= BASE_URL ?>hotel/invoices/download_pdf.php?id=<?php echo $inv['id']; ?>" class="text-indigo-600 hover:text-indigo-900 bg-indigo-50 px-4 py-2 rounded-lg font-bold" target="_blank">
                                         Download PDF
                                     </a>
                                 </td>

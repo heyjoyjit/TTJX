@@ -20,7 +20,7 @@ try {
     $g = $stmt->fetch();
     if (!$g) throw new Exception('Gallery item not found');
 
-    $path = BASE_PATH . 'uploads/hotels/gallery/' . $g['media'];
+    $path = BASE_PATH . 'uploads/hotel/gallery/' . $g['media'];
     if (file_exists($path) && is_file($path)) unlink($path);
 
     $stmt = $db->prepare("DELETE FROM room_galleries WHERE id = ?");

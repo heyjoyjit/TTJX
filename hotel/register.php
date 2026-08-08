@@ -101,7 +101,7 @@ if (isHotelOwnerLoggedIn()) {
 
                 <div class="mt-10 border-t border-slate-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p class="text-sm text-slate-500 font-medium text-center md:text-left">
-                        Already registered? <a href="<?= BASE_URL ?>hotels/login.php" class="text-blue-600 hover:text-blue-800 transition-colors border-b border-transparent hover:border-blue-600 pb-0.5">Back to Login</a>
+                        Already registered? <a href="<?= BASE_URL ?>hotel/login.php" class="text-blue-600 hover:text-blue-800 transition-colors border-b border-transparent hover:border-blue-600 pb-0.5">Back to Login</a>
                     </p>
                     <button type="submit" class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-blue-500/30 transition-all active:scale-[0.98]">
                         Complete Registration <i class="fas fa-check-circle ml-2"></i>

@@ -322,8 +322,8 @@
                         $('#existingGallery').removeClass('hidden');
                         d.gallery.forEach(g => {
                             let content = g.media_type === 'image' ?
-                                `<img src="<?= BASE_URL ?>uploads/hotels/gallery/${g.media}" class="w-full h-full object-cover">` :
-                                `<video class="w-full h-full object-cover" muted><source src="<?= BASE_URL ?>uploads/hotels/gallery/${g.media}"></video>`;
+                                `<img src="<?= BASE_URL ?>uploads/hotel/gallery/${g.media}" class="w-full h-full object-cover">` :
+                                `<video class="w-full h-full object-cover" muted><source src="<?= BASE_URL ?>uploads/hotel/gallery/${g.media}"></video>`;
 
                             $('#existingGallery').append(`
                                 <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border shadow-sm group bg-slate-900" id="gal-${g.id}">

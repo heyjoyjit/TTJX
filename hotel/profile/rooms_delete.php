@@ -23,7 +23,7 @@ try {
 
     foreach ($galleries as $g) {
         if (!empty($g['media'])) {
-            $filePath = BASE_PATH . 'uploads/hotels/gallery/' . $g['media'];
+            $filePath = BASE_PATH . 'uploads/hotel/gallery/' . $g['media'];
             if (file_exists($filePath) && is_file($filePath)) {
                 @unlink($filePath);
             }
